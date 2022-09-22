@@ -9,10 +9,11 @@ public class MaxEleInArray {
 
     private static int findMaxElement(int[] arr) {
         int max = Integer.MIN_VALUE;
-        for(int i=0; i<arr.length;i++){
-            if(max<arr[i])
-                max = arr[i];
+        for(int num: arr){
+            if(max<num)
+                max = num;
         }
+        //returns The Maximum number in the array is: 35
         return max;
     }
 }
